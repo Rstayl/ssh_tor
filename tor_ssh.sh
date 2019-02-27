@@ -4,9 +4,9 @@
 #
 # Author: Nick Busey
 #
-# This file is meant to get SSH access via Tor in one command.
+# This file is meant to get SSH access via Tor to a server in one command.
 #
-# Example Usage: bash <(curl -s https://gitlab.com/grownetics/devops/raw/master/tor_ssh.sh)
+# Usage (as root): $ bash <(curl -s https://gitlab.com/grownetics/devops/raw/master/tor_ssh.sh)
 #
 # Client Config Example
 # In order to connect to the hostnames out by this file, you should have the TOR browser running
