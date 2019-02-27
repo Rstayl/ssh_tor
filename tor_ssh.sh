@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # TOR Setup Script
-#
 # Author: Nick Busey
 #
 # This file is meant to get SSH access via Tor to a server in one command.
@@ -9,10 +8,17 @@
 # Usage (as root): $ bash <(curl -s https://gitlab.com/grownetics/devops/raw/master/tor_ssh.sh)
 #
 # Client Config Example
-# In order to connect to the hostnames out by this file, you should have the TOR browser running
+#
+# In order to connect to the hostnames output by this file, you should have the TOR browser running
 # and your ~/.ssh/config should contain the following 2 lines:
+#
 #   Host *.onion
 #       ProxyCommand /usr/bin/nc -xlocalhost:9150 -X5 %h %p
+#
+# Now once you get a hostname back from the script (e.g.: tmxybgr6e7kpenoq.onion)
+# you can connect to it like a normal host.
+#
+# Example: `ssh vagrant@tmxybgr6e7kpenoq.onion`
 
 # Install Tor
 apt-get update && apt-get install -y tor
