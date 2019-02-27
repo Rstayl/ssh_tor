@@ -1,6 +1,6 @@
 # Grownetics DevOps
 
-[Grownetics](https://grownetics.co) DevOps related files and utilities.
+[Grownetics](http://grownetics.co) DevOps related files and utilities.
 
 ## Tor SSH
 
