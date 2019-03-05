@@ -26,7 +26,7 @@ apt-get update && apt-get install -y tor
 # Append the hidden service configuration to the Torrc file
 echo -e "HiddenServiceDir /var/lib/tor/onion-ssh/\nHiddenServicePort 22 127.0.0.1:22" > /etc/tor/torrc
 
-# Remove the bogus tor service Ubuntu installs by default
+# Remove the bogus tor service Ubuntu installs by default (https://askubuntu.com/a/903341)
 rm /lib/systemd/system/tor.service
 
 # Ensure the changes are recognized
