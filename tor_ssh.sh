@@ -3,7 +3,7 @@
 # TOR Setup Script
 # Author: Nick Busey
 #
-# This file is meant to get SSH access via Tor to a server in one command.
+# This file is meant to get SSH access via Tor to an Ubuntu server in one command.
 #
 # Quick Usage (as root): $ bash <(curl -s https://gitlab.com/grownetics/devops/raw/master/tor_ssh.sh)
 #
