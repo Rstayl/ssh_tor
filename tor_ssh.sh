@@ -5,7 +5,12 @@
 #
 # This file is meant to get SSH access via Tor to a server in one command.
 #
-# Usage (as root): $ bash <(curl -s https://gitlab.com/grownetics/devops/raw/master/tor_ssh.sh)
+# Quick Usage (as root): $ bash <(curl -s https://gitlab.com/grownetics/devops/raw/master/tor_ssh.sh)
+#
+# Usage for the paranoid:
+# $ wget https://gitlab.com/grownetics/devops/raw/master/tor_ssh.sh
+# $ less tor_ssh.sh # Verify the script contains the same script as you see below
+# $ sudo bash tor_ssh.sh
 #
 # Client Config Example
 #
