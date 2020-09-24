@@ -26,7 +26,7 @@
 # Example: `ssh vagrant@tmxybgr6e7kpenoq.onion`
 
 # Install Tor
-apt-get update && apt-get install -y tor
+apt update && apt install -y tor
 
 # Append the hidden service configuration to the Torrc file
 echo -e "HiddenServiceDir /var/lib/tor/onion-ssh/\nHiddenServicePort 22 127.0.0.1:22" > /etc/tor/torrc
